@@ -1,0 +1,45 @@
+{
+  "collectionName": "components_omdb_commons",
+  "info": {
+    "displayName": "Common",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "released": {
+      "type": "string"
+    },
+    "genre": {
+      "type": "string"
+    },
+    "runtime": {
+      "type": "string"
+    },
+    "plot": {
+      "type": "text"
+    },
+    "language": {
+      "type": "string"
+    },
+    "poster": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "decimal"
+    },
+    "votes": {
+      "type": "decimal"
+    },
+    "year": {
+      "type": "string"
+    },
+    "up": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}
