@@ -16,7 +16,8 @@
       "type": "string"
     },
     "title": {
-      "type": "string"
+      "type": "string",
+      "unique": false
     },
     "released": {
       "type": "string"
