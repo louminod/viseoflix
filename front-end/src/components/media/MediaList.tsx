@@ -3,20 +3,12 @@ import {collection, getDocs} from "@firebase/firestore";
 import {db} from "../../services/firebase-config";
 import Media from "./Media";
 import "./MediaList.css";
-import {MediaType} from "../../models/enums/MediaType";
+import {useSelector} from "react-redux";
+import {State} from "../../redux";
 
-const MediaList = (props) => {
-    const [medias, setMedias] = useState([]);
-    const dbCollection = collection(db, "movies");
-
-    useEffect(() => {
-        const getMedias = async () => {
-            const data = await getDocs(dbCollection);
-            setMedias(data.docs.map(doc => ({...doc.data(), id: doc.id})));
-        };
-
-        getMedias();
-    }, []);
+const MediaList = () => {
+    // @ts-ignore
+    const medias: { id: string }[] = useSelector((state: State) => state.medias);
 
     return (
         <div className="MediaList">
