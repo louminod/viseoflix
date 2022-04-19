@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import {Nav} from "react-bootstrap";
 import "./SideNav.css";
 import logo from "./logo.png";
@@ -15,7 +15,6 @@ const SideNav = () => {
         changeHome(HomeType.LANDING);
         listMedia(mediaType);
     }
-
 
     return (
         <Nav className="d-block sideNav">

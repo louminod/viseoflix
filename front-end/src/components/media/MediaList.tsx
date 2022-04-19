@@ -1,13 +1,10 @@
-import React, {useEffect, useState} from 'react';
-import {collection, getDocs} from "@firebase/firestore";
-import {db} from "../../services/firebase-config";
+import React from 'react';
 import Media from "./Media";
 import "./MediaList.css";
 import {useSelector} from "react-redux";
 import {State} from "../../redux";
 
 const MediaList = () => {
-    // @ts-ignore
     const medias: { id: string }[] = useSelector((state: State) => state.medias);
 
     return (

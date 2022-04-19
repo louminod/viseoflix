@@ -1,12 +1,12 @@
 import React from 'react';
 import "./Home.css";
-import Carrousel from "../carroussel/Carrousel";
+import CustomCarousel from "../carousel/CustomCarousel";
 import MediaList from "../media/MediaList";
 
 const Home = () => {
     return (
         <div className="Home">
-            <Carrousel/>
+            <CustomCarousel/>
             <MediaList/>
         </div>
     );

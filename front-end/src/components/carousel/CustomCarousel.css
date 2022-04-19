@@ -1,0 +1,13 @@
+.CustomCarousel-Item {
+    height: 600px;
+}
+
+.CustomCarousel-Image {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.CustomCarousel-Caption {
+    color: white;
+}

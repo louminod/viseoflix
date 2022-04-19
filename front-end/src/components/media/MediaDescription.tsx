@@ -3,7 +3,6 @@ import "./MediaDescription.css";
 import {Button, Col, Modal, Row} from "react-bootstrap";
 import {FaPlay} from "react-icons/fa";
 import axios from "axios"
-import ReactPlayer from "react-player";
 
 const MediaDescription = (props) => {
     const media = props.media;
