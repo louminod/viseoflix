@@ -7,6 +7,7 @@ import Home from "../home/Home";
 import {useSelector} from "react-redux";
 import {State} from "../../redux";
 import MediaDescription from "../media/MediaDescription";
+import {HomeType} from "../../redux/action-types";
 
 function App() {
     const home = useSelector((state: State) => state.home);
@@ -18,7 +19,7 @@ function App() {
                 </Col>
                 <Col>
                     {
-                        home === 0 ? <Home/> : <MediaDescription media={home}/>
+                        home === HomeType.LANDING ? <Home/> : <MediaDescription media={home}/>
                     }
                 </Col>
             </Row>
